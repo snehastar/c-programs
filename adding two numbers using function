@@ -1,0 +1,18 @@
+#include<stdio.h>
+sum(int a,int b);
+void main()
+{
+int a,b;
+int c;
+printf("Type the values of a and b respectively");
+scanf("%d %d",&a,&b);
+c=sum(a,b);
+printf("The sum of a and b is %d",c);
+}
+
+sum(int a,int b)
+{
+int c;
+c=a+b;
+return(c);
+}
