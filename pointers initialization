@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+  int a;
+  int *p;// pointer to a variable
+  p=&a; //address of a
+  a=89;
+  printf("%d %d %d %d \n",a,p,*p,&p);
+//*p=a is called as dereferencing
+ *p=4;
+ printf("%d %d \n",a,*p);
+ printf("%d\n",(p+1));
+ printf("%d\n",*(p+1));
+    return 0;
+}
