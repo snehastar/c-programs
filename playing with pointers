@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+    int a;
+    int *p;
+    //*p=a
+    p=&a; 
+    a=1025;
+    char *po;
+    // po=p; this is an error as p points to a which is an int type
+    po=(char*)p; // typecasting so as to 
+    //1025 in bin= 00000000 00000000 00000100 00000001
+    // 00000001 =1
+    // 00000100 =4
+      printf("%d %d\n",a,&a);
+      printf("%d %d %d\n ",po,*po,&po);
+      printf("%d %d\n ",p+1,*(p+1));
+      printf("%d %d\n ",po+1,*(po+1)); 
+      
+    
+}
